@@ -1,0 +1,117 @@
+*{
+    --main-font: 'Josefin Sans', sans-serif;
+}
+
+body{
+    font-family: var(--main-font);
+
+    margin: 0;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 0;
+    padding: 0 1rem;
+
+    box-shadow: 0 .25rem .125rem rgba(0, 0, 0, 0.286)
+}
+
+/* Weather Display Styles */
+
+.weather{
+    display:flex;
+    flex-direction: row;
+
+    gap: 1rem;
+
+    max-width: 100%;
+
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+.card{
+
+    min-height: 45vh;
+    width: 35vw;
+
+    margin: 2rem auto;
+
+    border-radius:5px;
+    box-shadow: 0 0 .3rem black;
+
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+}
+
+
+
+
+
+
+
+
+/* Search Bar Styles */
+.userSearch{
+    display:flex;
+    flex-direction: row;
+    width: 100%;
+    text-align:center;
+
+    margin-top: 2rem;
+
+    font-size: 2rem;
+}
+
+.searchBar{
+    display: flex;
+    flex-direction: row;
+
+    margin: 0 auto;
+}
+
+.userSearch input{
+    display:block;
+    font-size: 1.25rem;
+
+    margin-right: 0;
+    margin-left: 1rem;
+
+    border: solid black 1px;
+    border-right: none;
+
+    border-radius: 5px 0 0 5px;
+}
+
+.userSearch input:focus{
+    outline:  none;
+    box-shadow: 0 0 5px rgb(21, 118, 255);
+}
+
+.userSearch button{
+    font-size:1.25rem;
+
+    border: none;
+
+    background-color: rgb(70, 147, 255);
+
+    margin-left: 0;
+
+    border: solid black 1px;
+    border-left: none;
+
+    border-radius: 0 5px 5px 0;
+
+    cursor:pointer;
+}
+
+.userSearch button:hover{
+    background-color: rgb(21, 118, 255);
+}
+

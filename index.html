@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+</head>
+<header>
+    <h1>My Weather App</h1>
+    
+</header>
+<body>
+    <div class="userSearch">
+        <div class="searchBar">
+            <label for="location">City, Country: </label>
+            <input type="text" name="location" id="location" placeholder="Tokyo, Japan">
+            <button id="button">Search</button>
+        </div>
+    </div>
+    <div class="weather" id="weather">
+        <div class="card" id="weatherCard">
+            <h2 class="condition">Weather Conditions</h2>
+            <p class="conditionResponse"></p>
+        </div>
+        
+        <div class="card" id="tempCard">
+            <h2 class="temp">Temperature</h2>
+            <p class="tempResponse"></p>
+        </div>
+
+        <div class="card" >
+            <h2>Should You Where A Jacket?</h2>
+            <div id="jacket"></div>
+            
+        </div>
+
+    </div>
+
+    
+    
+</body>
+<script src="script.js"></script>
+</html>
